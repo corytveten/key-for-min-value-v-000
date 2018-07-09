@@ -17,6 +17,7 @@ def key_for_min_value(hash)
         if min_num == value
           key
         end
+      end
   end
 end
 
