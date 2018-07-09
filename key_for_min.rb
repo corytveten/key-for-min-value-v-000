@@ -11,7 +11,7 @@ def key_for_min_value(hash)
     }
     lowest_num = array[0]
       array.each { |value|
-        lowest_num = value if value < min_num
+        lowest_num = value if value < lowest_num
       }
       hash.each do |key, value|
         if lowest_num == value
