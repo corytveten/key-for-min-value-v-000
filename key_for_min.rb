@@ -15,7 +15,7 @@ def key_for_min_value(hash)
       }
       hash.each do |key, value|
         if lowest_num == value
-          key
+          return key
         end
       end
   end
