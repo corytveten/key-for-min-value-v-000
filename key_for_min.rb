@@ -7,8 +7,16 @@ def key_for_min_value(hash)
   else
     array = []
     hash.each {|key, value|
-      key
+      array << value
     }
+    lowest_num = array[0]
+      array.each { |value|
+        lowest_num = value if value < min_num
+      }
+      hash.each do |key, value|
+        if min_num == value
+          key
+        end
   end
 end
 
